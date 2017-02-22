@@ -59,10 +59,7 @@ Gavdos.textContent = MyGavdosParagraph;
 
 
 // adding button functionality in order to store variables
-btnSubmit.addEventListener("click", function(event){
-	event.preventDefault();
-
-	// redirecting to main page
+document.getElementById("btnSubmit").onclick = function() {
 	location.href="http://comp1073-djgillard-200344037-midterm.azurewebsites.net/index.html";
 
 	// contact functionality
@@ -77,5 +74,5 @@ btnSubmit.addEventListener("click", function(event){
 	console.log(lastName);
 	console.log(email);
 	console.log(comments);
-});
+};
 })();
