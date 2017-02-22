@@ -58,21 +58,23 @@ var MyGavdosParagraph = "Near the more well-known Crete, Gavdos is the most sout
 Gavdos.textContent = MyGavdosParagraph;
 
 
-// adding button functionality in order to store variables
-document.getElementById("btnSubmit").onclick = function() {
-	location.href="http://comp1073-djgillard-200344037-midterm.azurewebsites.net/index.html";
 
-	// contact functionality
-	// storing varaibles for all inputs
-	let firstName = document.getElementById("firstName");
-	let lastName = document.getElementById("lastName");
-	let email = document.getElementById("email");
-	let comments = document.getElementById("comments");
+// contact functionality
+// storing varaibles for all inputs
+let firstName = document.getElementById("firstName");
+let lastName = document.getElementById("lastName");
+let email = document.getElementById("email");
+let comments = document.getElementById("comments");
+
+// adding button functionality
+
+btnSubmit.addEventListener("click", function(event){
+	event.preventDefault();
 
 	// outputing varaibales to the console
 	console.log(firstName);
 	console.log(lastName);
 	console.log(email);
 	console.log(comments);
-};
+});
 })();
