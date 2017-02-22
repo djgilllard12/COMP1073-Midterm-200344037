@@ -57,4 +57,25 @@ var GavdosParagraph = document.getElementById("Gavdos");
 var MyGavdosParagraph = "Near the more well-known Crete, Gavdos is the most southern island in Greece — and the most southern spot in Europe discounting the Canaries. Only accessible by ferry, the remote island has only about 50 permanent residents, and can feel like your private playground. Local legend has it that the island was the home of goddess Calypso, who kept Odysseus prisoner here. Today, a favorite tourist activity is to visit the spot believed to be her cave. Be warned, you won't find any luxury hotels here. While the romantically under-developed, super laid back island has a number of rooms for rent, those are limited, as the real draw here for many is the free, seaside camping.";
 Gavdos.textContent = MyGavdosParagraph;
 
+
+// adding button functionality in order to store variables
+btnSubmit.addEventListener("click", function(event){
+	event.preventDefault();
+
+	// redirecting to main page
+	location.href="http://comp1073-djgillard-200344037-midterm.azurewebsites.net/index.html";
+
+	// contact functionality
+	// storing varaibles for all inputs
+	let firstName = document.getElementById("firstName");
+	let lastName = document.getElementById("lastName");
+	let email = document.getElementById("email");
+	let comments = document.getElementById("comments");
+
+	// outputing varaibales to the console
+	console.log(firstName);
+	console.log(lastName);
+	console.log(email);
+	console.log(comments);
+});
 })();
